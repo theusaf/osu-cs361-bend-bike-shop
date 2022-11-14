@@ -12,7 +12,7 @@ bike = Bike.new({
   :extra_items => items
 })
 
-rental = Rental.new(bike)
+rental = Rental.new(bike, bike.luggage)
 
 puts "Total Price: #{rental.price}, Total Weight: #{rental.weight}"
 
